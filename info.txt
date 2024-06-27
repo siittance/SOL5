@@ -1,0 +1,9 @@
+1 - 0x4DD8811f3CdDE6c92E9029AE19107cCb3550B1F7 (Пароль: 1)
+
+
+geth --datadir data --networkid 150220241016 --unlock 0x4DD8811f3CdDE6c92E9029AE19107cCb3550B1F7 --allow-insecure-unlock --http --http.corsdomain="*" --http.api web3,eth,debug,personal,net,miner --miner.etherbase 0x4DD8811f3CdDE6c92E9029AE19107cCb3550B1F7 - запуск частной сети блокчейна
+
+geth account new --datadir data - создание нового аккаунта
+geth init --datadir data genesis.json - создание генезис-блока
+geth attach --datadir data ipc:\\.\pipe\geth.ipc - создание отдельной консоли geth, чтобы управлять процессами
+в блокчейне
